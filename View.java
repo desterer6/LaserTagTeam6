@@ -22,8 +22,7 @@ class View extends JPanel
 		model = m;
 	}
 	
-	void removeButton()
-	{
+	void removeButton(){
 		this.remove(button1);
 		this.repaint();
 	}
