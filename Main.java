@@ -1,7 +1,7 @@
 /*
-Name: David Esterer
-Date: 02/08/2022
-Assignment: Java Basics
+Name: Team 6
+Project: Laser Tag
+Date: 09/30/2022
 */
 
 import javax.swing.JFrame;
