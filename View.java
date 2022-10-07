@@ -104,7 +104,7 @@ public class View extends JPanel{
 		gbl_panelsplash.rowHeights = new int[]{14, 50, 0};
 		gbl_panelsplash.columnWeights = new double[]{0.0, 1.0, 0.0, Double.MIN_VALUE};
 		gbl_panelsplash.rowWeights = new double[]{1.0, 0.0, Double.MIN_VALUE};
-		frmLasertag.getContentPane().setLayout(gbl_panelsplash);
+		panelsplash.setLayout(gbl_panelsplash);
 				
 		JProgressBar progressBar = new JProgressBar();
 		GridBagConstraints gbc_progressBar = new GridBagConstraints();
@@ -123,7 +123,7 @@ public class View extends JPanel{
 		gbc_panelsplash_1.fill = GridBagConstraints.HORIZONTAL;
 		gbc_panelsplash_1.gridx = 1;
 		gbc_panelsplash_1.gridy = 1;
-		frmLasertag.getContentPane().add(panelsplash_1, gbc_panelsplash_1);
+		panelsplash.add(panelsplash_1, gbc_panelsplash_1);
 		//-----------------------------------------------------------------------------------------------------
 				
 		for(int i = 0; i < 100; i++){
