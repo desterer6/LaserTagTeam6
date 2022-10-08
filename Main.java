@@ -16,16 +16,11 @@ public class Main extends JFrame
 	public Main()
 	{
 		model = new Model();
-		controller = new Controller(model);
-		view = new View(controller, model);
+		view = new View();
+		controller = new Controller(model, view);
+		view.show(view);
 		view.addMouseListener(controller);
-		this.addKeyListener(controller);
-		this.setTitle("Photon Laser Tag");
-		this.setSize(1000, 1000);
-		this.setFocusable(true);
-		this.getContentPane().add(view);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setVisible(true);
+		view.addKeyListener(controller);
 	}
 	
 	public void run()
@@ -34,10 +29,10 @@ public class Main extends JFrame
 		{
 			controller.update();
 			model.update();
-			view.repaint();
+			//view.repaint();
 			Toolkit.getDefaultToolkit().sync();
 			try{
-				Thread.sleep(40);
+				Thread.sleep(1);
 			} catch(Exception e){
 				e.printStackTrace();
 				System.exit(1);
